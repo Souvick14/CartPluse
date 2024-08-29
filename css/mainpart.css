@@ -1,0 +1,59 @@
+
+.brief-product-des{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.male-section{
+    overflow: hidden;
+    /* display: inline-block; */
+    border: transparent;
+    border-radius: 23px;
+    width: 13em;
+    height: 11em;
+    /* border: red solid 2px; */
+}
+.char1,.char2,.char3,.char4,.char5{
+    position: relative;
+    top: 16em;
+    left: 10px;
+  width: 14em;
+  height: 8em;
+background-color: transparent;
+}
+/* .char2{
+    position: relative;
+    top: 16em;
+    left: 10px;
+    width: 14em;
+    height: 8em;
+    background-color: transparent;
+} */
+.male-section-text{
+    border-bottom: rgb(255, 255, 255) 6px solid;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-family: Kanit ,Agbalumo,kenia,sans-serif;
+    box-sizing: border-box;
+    border-radius: 4rem;
+    font-size: larger;
+    text-align: end;
+    color: aliceblue;
+background-color: #c07600;
+}
+#char1-image,#char2-image,#char3-image,#char3-image,#char4-image{
+    object-fit: contain;
+    width: 100px;
+    height: 100%
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton&family=Great+Vibes&family=Heebo:wght@600&family=Kanit&family=Oswald:wght@200&family=Pacifico&family=Pixelify+Sans&family=Wavefont&display=swap');
+

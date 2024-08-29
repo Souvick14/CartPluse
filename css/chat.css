@@ -1,0 +1,148 @@
+.chat-section{
+    background-color: transparent;
+    background-image: url(/img/chat-icon.png);
+    width: 45px;
+    height: 45px;
+    position:fixed;
+    border: transparent;
+    right: 2vh;
+    bottom: 3vh;
+    z-index: 5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+}
+.chat-page{
+    z-index: 5;
+    display: none;
+    overflow: hidden;
+    height: 33em;
+    width: 15em;
+    background: rgb(1,64,102);
+    background: linear-gradient(329deg, rgba(1,64,102,1) 15%, rgba(0,212,255,1) 100%);
+    border: 2px white solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    position: fixed;
+    right: 8vh;
+    bottom: 8vh;
+    /* animation: chatani 0.1s ease-in-out 0s 1 normal ; */
+}
+.chat-name{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 90%;
+    text-align: center;
+    height: 40px;
+    color: rgb(0, 42, 150);
+    background: rgb(0,168,185);
+background: linear-gradient(336deg, rgba(0,168,185,1) 15%, rgba(179,242,255,1) 100%);
+}
+@keyframes chatani{
+    0%{
+        width: 0px;
+        height: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+    10%{
+        width: 1.5em;
+        height: 3.3em;
+        border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    }
+    20%{
+        width: 3em;
+        height: 6.6em;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+    30%{
+    
+        width: 4.5em;
+        height: 9.9em;
+            border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    }
+    40%{
+    
+        width: 6em;
+        height: 13.2em;
+            border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    }
+    50%{
+    
+        width: 7.5em;
+        height: 16.5em;
+            border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    }
+    60%{
+        width: 9em;
+    
+        height: 19.8em;
+            border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    }
+    70%{
+        width: 10.5em;
+    
+        height: 23.1em;
+            border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    }
+    80%{
+        width: 12em;
+        height: 26.4em;
+            border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    
+    }
+    90%{
+        width: 13.5em;
+            border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    
+        height: 29.7em;
+            border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    }
+    100%{
+        width: 15em;
+        height: 33em;
+            border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    
+    }
+  }

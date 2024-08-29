@@ -1,0 +1,13 @@
+#category-select{
+    text-align: center;
+    width: 95vw;
+    margin: 2.5vh;
+    height: 4em;
+    border-radius: 0px;
+background: #d11515;
+box-shadow: inset 32px 32px 64px #940f0f,
+            inset -32px -32px 64px #ff1b1b;
+}
+#category-all{
+    height: 300px;
+}

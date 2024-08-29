@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+
+.header {
+  font-family: "Exo 2", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.title-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: skew(0, -10deg);
+}
+
+.top-title {
+  order: 1;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.bottom-title {
+  order: 3;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.sweet-title {
+  order: 2;
+  color: #fde9ff;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 0.75em;
+  text-align: center;
+  text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
+    3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
+    6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
+    6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
+    9px 7px 1px #4af7ff;
+
+  span {
+    display: block;
+    position: relative;
+
+    /* &:before {
+      content: attr(data-text);
+      position: absolute;
+      text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9,
+        -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
+      z-index: 1;
+    } */
+
+    &:nth-child(1) {
+      padding-right: 2.25rem;
+    }
+
+    &:nth-child(2) {
+      padding-left: 0;
+    }
+  }
+}
+
+.disclaimer {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+.category-button {
+  border-radius: 0px;
+  background: transparent;
+  box-shadow: inset 6px 6px 12px #2a2a2a, inset -6px -6px 12px transparent;
+  border: transparent;
+  width: 97vw;
+  margin: 1.5vw;
+  margin-bottom: 0;
+  height: 6em;
+  background-image: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.category-button:hover {
+  animation: category-button-animation 1s ease-in-out 0s infinite normal;
+}
+
+.selection {
+  overflow: hidden;
+  transform: scaleY(1000px);
+  width: 97vw;
+  margin: 1.5vw;
+  height: 100%;
+  background-color: transparent;
+}
+
+.men-selection-button {
+  overflow: hidden;
+  border: transparent;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 12em;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.male-sections {
+  z-index: 0;
+  background-image: url(/img/menbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(0.2px);
+  border: transparent;
+  border-radius: 0;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 6em;
+  background-color: brown;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menimg {
+  z-index: 1;
+  position: relative;
+  right: 35vw;
+  width: auto;
+  height: 5rem;
+  transform: translateY(-130px);
+  transition: transform 1s ease-in;
+  top: 130px;
+}
+
+#menimg1 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.men-sections-text {
+  /* background-color: rgb(165, 165, 75); */
+  font-family: Lobster, Anton, "Marko One", serif;
+  font-weight: bold;
+  margin: 0 5vw;
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 4rem;
+  color: rgb(234, 255, 0);
+  background-color: #ffe60100;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+.women-selection-button {
+  overflow: hidden;
+  border: transparent;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 12em;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.female-selection {
+  z-index: 0;
+  background-image: url(/img/womenbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(0.2px);
+  border: transparent;
+  border-radius: 0;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 6em;
+  background-color: brown;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.womenimg {
+  z-index: 1;
+  position: relative;
+  left: 35vw;
+  width: auto;
+  height: 5rem;
+  transform: translateY(-130px);
+  transition: transform 1s ease-in;
+  top: 130px;
+}
+
+#womenimg1 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.women-sections-text {
+  /* background-color: rgb(165, 165, 75); */
+  font-family: Lobster, Anton, "Marko One", serif;
+  font-weight: bold;
+  margin: 0 5vw;
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 4rem;
+  color: #b905f5;
+  background-color: #ffe60100;
+  text-shadow: rgb(0, 0, 0) 4px 4px 4px;
+}
+
+.electronic-selection-button {
+  overflow: hidden;
+  border: transparent;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 12em;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.electronic-selections {
+  z-index: 0;
+  background-image: url(/img/image_search_1699324405599.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(0.2px);
+  border: transparent;
+  border-radius: 0;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 6em;
+  background-color: brown;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.electronicimg {
+  z-index: 1;
+  position: relative;
+  left: 35vw;
+  width: auto;
+  height: 5rem;
+  transform: translateY(-130px);
+  transition: transform 1s ease-in;
+  top: 130px;
+}
+
+#electronicimg1 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.electronic-sections-text {
+  z-index: 3;
+  /* background-color: rgb(165, 165, 75); */
+  font-family: "Black Ops One", Anton, "Marko One", serif;
+  font-weight: bold;
+  margin: 0 5vw;
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 4rem;
+  color: rgb(0, 68, 255);
+  background-color: #ffe60100;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+.kids-selection-button {
+  overflow: hidden;
+  border: transparent;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 12em;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.kids-selections {
+  z-index: 0;
+  background-image: url(/img/baby1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(0.2px);
+  border: transparent;
+  border-radius: 0;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 6em;
+  background-color: brown;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.kidsimg {
+  z-index: 1;
+  position: relative;
+  right: 35vw;
+  width: auto;
+  height: 5rem;
+  transform: translateY(-130px);
+  transition: transform 1s ease-in;
+  top: 130px;
+}
+
+#kidsimg1 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.kids-selections-text {
+  /* background-color: rgb(165, 165, 75); */
+  font-family: Anton, "Marko One", serif;
+  font-weight: bold;
+  margin: 0 5vw;
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 4rem;
+  color: rgb(255, 0, 85);
+  background-color: #ffe60100;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+.poster-selection-button {
+  overflow: hidden;
+  border: transparent;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 12em;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.poster-selections {
+  z-index: 0;
+  background-image: url(/img/poster1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(0.2px);
+  border: transparent;
+  border-radius: 0;
+  width: 97vw;
+  /* margin: 1.5vw; */
+  height: 6em;
+  background-color: brown;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.posterimg {
+  z-index: 1;
+  position: relative;
+  right: 35vw;
+  width: auto;
+  height: 5rem;
+  transform: translateY(-130px);
+  transition: transform 1s ease-in;
+  top: 130px;
+}
+
+#posterimg1 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.poster-selections-text {
+  /* background-color: rgb(165, 165, 75); */
+  font-family: Anton, "Marko One", serif;
+  font-weight: bold;
+  margin: 0 5vw;
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 4rem;
+  color: rgb(255, 153, 0);
+  background-color: #ffe60100;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Marko+One");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=EB+Garamond&family=Josefin+Sans:wght@100&family=Kanit&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Butcherman&family=DM+Serif+Display&family=Lobster&family=Nunito&family=Oswald&family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Butcherman&family=DM+Serif+Display&family=Lobster&family=Nunito&family=Oswald&family=Poppins&display=swap");

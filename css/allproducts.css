@@ -1,0 +1,75 @@
+.all-products{
+    color: rgb(96, 87, 71);
+    margin: auto;
+    width: 95%;
+    overflow: hidden;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-1{
+    margin: 20px 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px yellow solid;
+    font-family: Nunito Sans ,sans-serif;
+    padding: 5px;
+    width: 10em;
+    height: 12em;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 160px;
+    grid-template-rows: 144px 48px;
+}
+.product-1-upper-section{
+    overflow: hidden;
+    background-color:transparent;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.product-1-image{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+.product-1-image:hover{
+    object-fit: contain;
+    width: 120%;
+    height: auto;
+}
+.product-1-lower-section{
+    overflow: hidden;
+    background-color:  rgba(252, 176, 69, 1) ;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: grid;
+    grid-template-columns: 160px;
+    grid-template-rows: 23px 25px;
+}
+.product-1-lower-section-maintext{
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+.product-1-lower-section-normaltext{
+    display: grid;
+    grid-template-columns: 100px 60px;
+    grid-row: 25px;
+}
+.features-rate{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 11px 14px;
+}
+.product-1-lower-section-features{
+    overflow: hidden;
+    text-wrap: nowrap;
+    word-break: break-all;
+    white-space: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton&family=Great+Vibes&family=Heebo:wght@600&family=Kanit&family=Nunito+Sans:opsz@6..12&family=Oswald:wght@200&family=Pacifico&family=Pixelify+Sans&family=Wavefont&display=swap');

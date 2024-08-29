@@ -1,0 +1,10 @@
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-all-space-around-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

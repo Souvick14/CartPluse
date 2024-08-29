@@ -1,0 +1,8 @@
+@keyframes check-it-out{
+0%{
+    transform: translateY(140px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
